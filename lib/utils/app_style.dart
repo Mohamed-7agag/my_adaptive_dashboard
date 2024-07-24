@@ -61,7 +61,7 @@ abstract class AppStyle {
 
   static TextStyle poppinsRegular16(context) {
     return GoogleFonts.poppins(
-      color: const Color(0xFF303030),
+      color: const Color(0xFF686868),
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w400,
     );
@@ -71,6 +71,13 @@ abstract class AppStyle {
     return GoogleFonts.poppins(
       color: const Color(0xFF000000),
       fontSize: getResponsiveFontSize(context, fontSize: 36),
+      fontWeight: FontWeight.w600,
+    );
+  }
+  static TextStyle poppinsSemiBold20(context) {
+    return GoogleFonts.poppins(
+      color: const Color(0xFF000000),
+      fontSize: getResponsiveFontSize(context, fontSize: 20),
       fontWeight: FontWeight.w600,
     );
   }
@@ -117,7 +124,7 @@ abstract class AppStyle {
 
   static TextStyle robotoMedium10(context) {
     return GoogleFonts.roboto(
-      color: const Color(0xFFFFFFFF),
+      color: const Color(0xFF686868),
       fontSize: getResponsiveFontSize(context, fontSize: 10),
       fontWeight: FontWeight.w500,
     );

@@ -1,4 +1,4 @@
-abstract class Assets {
+class Assets {
   Assets._();
   
   /// Assets for imagesDashboard
@@ -18,8 +18,8 @@ abstract class Assets {
   static const String imagesMenu = "assets/images/menu.svg";
 
   /// Assets for imagesMessage
-  /// assets/images/message.png
-  static const String imagesMessage = "assets/images/message.png";
+  /// assets/images/message.svg
+  static const String imagesMessage = "assets/images/message.svg";
 
   /// Assets for imagesNotification
   /// assets/images/notification.svg
@@ -48,6 +48,9 @@ abstract class Assets {
   /// Assets for imagesSupport
   /// assets/images/support.svg
   static const String imagesSupport = "assets/images/support.svg";
-}
 
+  /// Assets for imagesUser
+  /// assets/images/user.png
+  static const String imagesUser = "assets/images/user.png";
+}
 

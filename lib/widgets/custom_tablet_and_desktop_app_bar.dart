@@ -16,7 +16,7 @@ class CustomTabletAndDesktopAppBar extends StatelessWidget {
             bottom: BorderSide(
                 color: Color.fromARGB(255, 236, 236, 236), width: 0.6)),
       ),
-      padding: const EdgeInsets.only(top: 16, right: 40, bottom: 16),
+      padding: const EdgeInsets.only(top: 12, right: 40, bottom: 12),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

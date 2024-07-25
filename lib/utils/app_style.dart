@@ -121,6 +121,13 @@ abstract class AppStyle {
       fontWeight: FontWeight.w500,
     );
   }
+  static TextStyle poppinsMedium36(context) {
+    return GoogleFonts.poppins(
+      color: const Color(0xFF161E54),
+      fontSize: getResponsiveFontSize(context, fontSize: 36),
+      fontWeight: FontWeight.w500,
+    );
+  }
 
   static TextStyle robotoMedium10(context) {
     return GoogleFonts.roboto(

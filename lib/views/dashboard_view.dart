@@ -78,15 +78,11 @@ List<Widget> appBarActions = [
   const SizedBox(width: 20),
   SvgPicture.asset(Assets.imagesMessage),
   const SizedBox(width: 16),
-  Row(
-    children: [
-      Image.asset(
-        Assets.imagesUser,
-        width: 30,
-      ),
-      const SizedBox(width: 6),
-      const Icon(Icons.keyboard_arrow_down_rounded),
-      const SizedBox(width: 14)
-    ],
+  Image.asset(
+    Assets.imagesUser,
+    width: 30,
   ),
+  const SizedBox(width: 6),
+  const Icon(Icons.keyboard_arrow_down_rounded,color: Color(0xffB2B2B2),),
+  const SizedBox(width: 14),
 ];

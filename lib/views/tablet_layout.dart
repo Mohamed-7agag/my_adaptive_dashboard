@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_adaptive_dashboard/widgets/custom_tablet_and_desktop_app_bar.dart';
 import 'package:my_adaptive_dashboard/widgets/custom_tablet_drawer.dart';
 
 class TabletLayout extends StatelessWidget {
@@ -9,7 +10,14 @@ class TabletLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(child: CustomTabletDrawer()),
-        Expanded(flex: 9, child: SizedBox()),
+        Expanded(
+          flex: 9,
+          child: Column(
+            children: [
+              CustomTabletAndDesktopAppBar(),
+            ],
+          ),
+        ),
       ],
     );
   }

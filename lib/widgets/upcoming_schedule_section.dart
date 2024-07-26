@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_adaptive_dashboard/utils/app_style.dart';
 import 'package:my_adaptive_dashboard/widgets/announcement_section_header.dart';
-import 'package:my_adaptive_dashboard/widgets/announcement_section_item_list_view.dart';
 import 'package:my_adaptive_dashboard/widgets/custom_background_container.dart';
+import 'package:my_adaptive_dashboard/widgets/upcoming_schedule_section_list_view.dart';
 
 class UpcomingScheduleSection extends StatelessWidget {
   const UpcomingScheduleSection({super.key});
@@ -25,9 +25,7 @@ class UpcomingScheduleSection extends StatelessWidget {
               SizedBox(height: 16),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
-                child: AnnouncementSectionItemListView(
-                  isUpcoming: true,
-                ),
+                child: UpcomingScheduleSectionListView(),
               ),
             ],
           ),

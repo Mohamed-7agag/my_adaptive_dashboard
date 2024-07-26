@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_adaptive_dashboard/widgets/announcement_section.dart';
 import 'package:my_adaptive_dashboard/widgets/custom_drawer.dart';
 import 'package:my_adaptive_dashboard/widgets/custom_tablet_and_desktop_app_bar.dart';
-import 'package:my_adaptive_dashboard/widgets/dashboard_section.dart';
-import 'package:my_adaptive_dashboard/widgets/dashboard_statistics_section.dart';
-import 'package:my_adaptive_dashboard/widgets/recently_activity_section.dart';
-import 'package:my_adaptive_dashboard/widgets/upcoming_schedule_section.dart';
+import 'package:my_adaptive_dashboard/widgets/dashboard_and_announcement_section.dart';
+import 'package:my_adaptive_dashboard/widgets/recently_activity_and_upcoming_schedule_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -31,34 +28,14 @@ class DesktopLayout extends StatelessWidget {
                           SizedBox(width: 36),
                           Expanded(
                             flex: 9,
-                            child: Column(
-                              children: [
-                                DashboardSection(),
-                                SizedBox(height: 20),
-                                DashboardStatisticsSection(),
-                                SizedBox(height: 20),
-                                AnnouncementSection(),
-                                SizedBox(height: 20),
-
-                              ],
-                            ),
+                            child: DashboardAndAnnouncementSection(),
                           ),
                           SizedBox(width: 30),
                           Expanded(
                             flex: 5,
-                            child: Column(
-                              children: [
-                                SizedBox(height: 40),
-                                RecentlyActivitySection(),
-                                SizedBox(height: 20),
-
-                                UpcomingScheduleSection()
-                              ],
-                            ),
+                            child: RecentlyActivityAndUpcomingScheduleSection(),
                           ),
-                          SizedBox(
-                            width: 36,
-                          )
+                          SizedBox(width: 36)
                         ],
                       )
                     ],

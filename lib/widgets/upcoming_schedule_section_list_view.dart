@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:my_adaptive_dashboard/models/announcement_item_model.dart';
 import 'package:my_adaptive_dashboard/widgets/announcement_section_item.dart';
 
-class AnnouncementSectionItemListView extends StatelessWidget {
-  const AnnouncementSectionItemListView({super.key});
+class UpcomingScheduleSectionListView extends StatelessWidget {
+  const UpcomingScheduleSectionListView({super.key});
   static const List<AnnouncementItemModel> items = [
     AnnouncementItemModel(
-      title: 'Outing schedule for every departement',
-      subTitle: '5 Minutes ago',
+      title: 'Review candidate applications',
+      subTitle: 'Today - 11.30 AM',
     ),
     AnnouncementItemModel(
-      title: 'Meeting HR Department',
-      subTitle: 'Yesterday, 12:30 PM',
+      title: 'Interview with candidates',
+      subTitle: 'Today - 10.30 AM',
     ),
     AnnouncementItemModel(
-      title: 'IT Department need two more talents for UX/UI Designer position',
-      subTitle: 'Yesterday, 09:15 AM',
+      title: 'Short meeting with product designer from IT Departement',
+      subTitle: 'Today - 09.15 AM',
     ),
   ];
   @override
@@ -26,7 +26,7 @@ class AnnouncementSectionItemListView extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 8),
                 child: AnnouncementSectionItem(
                   item: item,
-                  isUpcomingSection: false,
+                  isUpcomingSection: true,
                 ),
               ))
           .toList(),

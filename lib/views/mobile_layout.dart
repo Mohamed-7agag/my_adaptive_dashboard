@@ -26,7 +26,6 @@ class MobileLayout extends StatelessWidget {
             SizedBox(height: 20),
             UpcomingScheduleSection(),
             SizedBox(height: 20),
-
           ],
         ),
       ),
